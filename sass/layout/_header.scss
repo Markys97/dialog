@@ -10,15 +10,16 @@
         align-items: center;
         height: 90px;
         justify-content: space-between;
+        // border: 1px solid red;
       
       
         
     }
     &__body{
-        position: absolute;
+        position: absolute!important;
         left: 0;
         top: 90px;
-        background: #FFFFFF;
+        background: white;
         width: 100%;
         padding-top: 22px;
         opacity: 0;
@@ -56,12 +57,15 @@
         gap:28px 0 ;
     }
     &.active{
+        z-index: 200;
+        position: relative;
         .header__body{
             opacity: 1;
             pointer-events: unset;
             position: relative;
-            z-index: 200;
+         
         }
+    
     }
 
 }

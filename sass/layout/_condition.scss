@@ -32,6 +32,9 @@
             max-width: 100%;
         }
     }
+    &-bottom{
+        position: relative;
+    }
     &__body{
         position: relative;
         border-radius: 12px;
