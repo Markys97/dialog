@@ -1,0 +1,32 @@
+.wrapper{
+    max-width: 100%;
+    padding: 0 24px ;
+}
+
+.title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #23283B;
+    
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    color: #23283B;
+    span{
+        color: #E6514A;
+    }
+}
+
+.wrapper-page{
+    overflow: hidden;
+}
