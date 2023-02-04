@@ -44,3 +44,26 @@
         padding: 16px 60px;
     }
 }
+
+@media screen and (min-width:1200px){
+    .contact{
+        padding: 100px 0;
+        &__row{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__body{
+            max-width: 600px;
+        }
+        &__content{
+            padding: 0 70px;
+        }
+        &__title{
+            text-align: left;
+        }
+        &__text{         
+            text-align: left;
+        }
+    }
+}

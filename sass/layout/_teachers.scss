@@ -12,6 +12,7 @@
     .slider__pagination{
       text-align: center;
       margin-top: 48px;
+     
       
     }
     .swiper-horizontal>.swiper-pagination-bullets 
@@ -21,11 +22,21 @@
         margin: 0 20px;
         width: 8px;
         height: 8px;
+      
      }
     .swiper-pagination-bullet.swiper-pagination-bullet-active{
         background: #E6514A;
 
     }
+
+    .swiper-pagination-bullet{
+        transition: all 300ms;
+        &:hover{
+            opacity: 1;
+            background: #3035C4;
+        }
+    }
+   
    
 }
 
@@ -59,5 +70,13 @@
         line-height: 150%;
         text-align: center;
         color: #23283B;   
+    }
+}
+
+@media screen and (min-width:1200px){
+    .teacher{
+        &__title{
+            margin-bottom: 52px;
+        }
     }
 }

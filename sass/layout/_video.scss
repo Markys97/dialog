@@ -54,28 +54,27 @@
    
 }
 
-.welcome{
-    text-align: center;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #23283B;
-    padding-left: 52px;
-    display: inline;
-    position: relative;
-  
-    &::before{
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        height: 1px;
-        width: 40px;
-        background: #E6514A;
 
+
+
+
+@media screen and (min-width:1200px) {
+    .video{
+        padding: 54px 0 100px;
+        &__title{
+            margin-bottom: 42px;
+        }
+
+        &__img{
+            width: 770px;
+            height: 440px;
+            img{
+                width: 100%;
+                object-fit: cover;
+               
+            }
+        }
+      
     }
+   
 }

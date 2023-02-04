@@ -1,11 +1,5 @@
 .intro{
     padding: 48px 0 0;
-    &__container{
-
-    }
-    &__content{
-
-    }
     &__row{
         display: flex;
         flex-direction: column;
@@ -54,6 +48,46 @@
        
            
           
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .intro{
+        padding: unset;
+          position: relative;
+        &__body{
+            max-width: 570px;
+            padding: 120px 0 143px;
+            // border: 1px solid red;
+        }
+      
+        &__img{
+            width: 605px;
+            max-width: unset;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            border-radius: unset;
+            box-shadow: unset;
+           
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &__link{
+            text-align: left;
+        }
+        &__title{
+            margin-bottom: 52px;
+            text-align: unset;
+        }
+        &__wrapper-btn{
+            justify-content: flex-start;
         }
     }
 }

@@ -139,3 +139,69 @@
         }
     }
 }
+
+@media screen and (min-width:1200px) {
+    .footer{
+        padding: 60px 40px ;
+        &__content{
+            align-items: unset;
+            gap: 32px;
+        }
+        &__top{
+            flex-direction: row;
+            gap: 52px 0;
+            justify-content: space-between;
+            padding-bottom: 52px;
+        }
+        &__left{
+            max-width:200px;
+           
+            &-list{
+                li + li{
+                    margin-top: 24px;
+                }
+            }
+            &-item{
+                text-align: unset;
+            }
+        }
+        &__logo{
+            margin: 0 0 24px;
+        }
+
+        &__center{
+           
+            &-row{
+                gap: 0 60px;
+                justify-content: center;
+            }
+        
+        
+
+        }
+      
+        &__right{
+            max-width: 270px;
+            &-title{
+                text-align: unset;
+            }
+            &-content{
+                text-align: unset;
+            }
+           
+        }
+        .footer__phone-wrapper{
+            align-items: unset;
+        }
+
+        &__bottom{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+          &-links{
+            flex-direction: row;
+          }
+          
+        }
+      
+    }
+} 

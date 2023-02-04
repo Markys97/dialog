@@ -48,6 +48,32 @@ h1{
 
 }
 
+.welcome{
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #23283B;
+    padding-left: 52px;
+    display: inline;
+    position: relative;
+  
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 1px;
+        width: 40px;
+        background: #E6514A;
+
+    }
+}
+
 .list-checked li{
     position: relative;
     padding-left: 32px;
@@ -63,3 +89,49 @@ h1{
         background-size: 16px 16px;
     }
 }
+
+.scroll{
+    overflow: auto;
+    position: relative;
+    margin: 0 -24px;
+    padding: 0 24px;
+    &::-webkit-scrollbar{
+        background: transparent;
+    }
+}
+
+.main-content{
+    padding-top: 138px;
+}
+
+@media screen and (min-width:1200px) {
+    .main-content{
+        padding-top: 130px;
+    }
+    .wrapper{
+        max-width: 1199px;
+        padding: 0 15px;
+        margin: 0 auto;
+        // border: 1px solid red;
+    }
+
+    h1{
+        font-size: 56px;
+        line-height: 130%;
+        text-align: left;
+    }
+    .title{
+        font-size: 48px;
+        line-height: 130%;
+    }
+    .scroll{
+        margin: 0;
+        padding: 0;
+        
+    }
+}
+
+body,html{
+    scroll-behavior: smooth;
+}
+

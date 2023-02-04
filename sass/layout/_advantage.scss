@@ -49,6 +49,7 @@
     &__body{
         max-width: 200px;
         margin:  0 auto;
+        padding: 0 10px;
     }
     &__quantity{
         font-family: 'Lato';
@@ -70,5 +71,18 @@
         text-align: center;
         color: #23283B;
         
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .advantage{
+        padding: 80px 0px;
+        &__title{
+            margin-bottom:82px ;
+        }
+        &__grid{
+            grid-template-columns: repeat(3,1fr);
+            margin-bottom: 80px;
+        }
     }
 }

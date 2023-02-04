@@ -41,14 +41,33 @@ tab_titles.forEach((tab_title,index,arr)=>{
 
 // sliders
 const swiper = new Swiper('.teacher__slider .swiper',{
-    slidesPerView: 1,
-    spaceBetween: 10,
-    centeredSlides:true,
-    centeredSlidesBounds:true,
     pagination:{
-        el:'.slider__pagination'
+        el:'.slider__pagination',
+        clickable:true
+    },
+    breakpoints:{
+        320:{
+            slidesPerView: 1,
+            spaceBetween: 10,
+            centeredSlides:true,
+            centeredSlidesBounds:true,
+          
+        },
+        1200:{
+            slidesPerView: 3,
+            spaceBetween: 20,
+            centeredSlidesBounds:true,
+           
+          
+        }
     }
 })
+
+const swiperCourse = new Swiper('.course__slider .swiper',{
+    slidesPerView: 1,
+})
+
+
 
 // open modal with video
 let video_icon =document.querySelector('.video__icon')
@@ -68,12 +87,18 @@ video_icon.addEventListener('click',function(e){
 })
 
 // menu script
-
 let menu_item= [...document.querySelectorAll('.menu__item')]
-
 menu_item.forEach((item,index,arr)=>{
     item.addEventListener('click',function(e){
-       
+       if(window.screen.width <1200){
+        this
+        .closest('.header')
+        .classList.toggle('active')
+        document.body.classList.toggle('body-off')
+
+        document.querySelector('.burger').classList.toggle('burger-icon')
+        
+       }
     })
 })
 
